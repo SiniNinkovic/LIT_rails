@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bootstrap Utility Classes</title>
+    <link rel="shortcut icon" href="data:image/x-icon;" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+
+  <!-- to move to bottom of page -->
+    <script src=
+      "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+
+    <!-- jQuery code to show the working of this method -->
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                $(document).scrollTop($(document).height());
+            });
+        });
+    </script>
+
+  </head>
+    <!-- NAVIDATION BAR -->
+    <div class="d-flex justify-content-between sticky-top bg-light">
+        <div>
+          <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="">
+              <div>
+                 <%= image_tag("Cover1.png", size: "30x40") %>
+              </div>
+            </a>
+          </nav>
+        </div>
+        <ul class="nav justify-content-end center pt-3">
+          <li class="nav-item">
+            <a class="nav-link active text-secondary" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-secondary" href="#">#TechLife</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-secondary" href="#">#VanLife</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-secondary" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
+          </li>
+        </ul>
+    </div>
+
+    <!-- BOOK SECTION -->
+    <div class="card pt-3 pl-5 pb-5 text-dark" style="max-width: 100%;">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <div class="shadow-lg">
+            <%= image_tag("book.jpg", class: "card-img") %>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="card-body mt-3 mr-5 pt-5">
+            <h1 class="card-title text-center pb-4 ">Create Your Lit Life!</h1>
+            <h5 class="card-text text-center px-4">Transform your life by understanding how to shine your own light in a gloomy world, detach yourself from tech’s influence over your attention and create a new life.</h5>
+            <div class="text-center pt-5">
+              <a>
+                <button type="button" class="btn btn-warning btn-lg">Subscribe For Updates</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- QUOTE SECTION -->
+    <div class="bg-light pt-4 text-dark">
+    <div class="p-5 mx-5 text-center">
+      <h4 class="pt-5"><em>"Research shows the ability to stay focused is a competitive advantage, in work and in life. However, in an age of ever-increasing demands on our attention, how do we get the best from technology without letting it get the best of us?"</em></h4>
+      <h5 class="p-5 mb-5">- Nir Eyal Author of Hooked and Indistractable</h5>
+    </div>
+    </div>
+
+    <!-- PERSONAL SECTION -->
+      <div class="card bg-warning text-dark py-5">
+        <div class="row no-gutters">
+          <div class="col-md-4 pl-5">
+            <div class="shadow-lg">
+              <%= image_tag("profile.jpg", class: "card-img rounded") %>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="card-body mr-5 pt-3">
+              <h3 class="card-title pb-2 ">...I am writing that LIT book... as we speak</h3>
+              <p class="card-text px-4">My name is Sini Ninkovic, I am a former BMW, McKinsey, Apple and Lucid Motors employee and an MBA from UC Berkeley. In my adult life I have been regularly addicted to technology and have finally figured out why! First because I have a hard times resisting its temptations and also because tech is created to exploit our weaknesses.</p>
+              <p class="card-text px-4">I am writing a book for every young person who suffers from the same addiction to technology and wants to escape it by finding their inner self and creating an Uplit Life!</p>
+              <p class="card-text px-4">The book should be out by end of 2020. But don’t wait until then! Start reading, start your inner journey and start your Uplit Life now. Feel free to reach out under sini@uplitlife.com for questions and other requests.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <!-- SUBSCRIBE -->
+    <div class="bg-dark pt-4">
+      <div class="container pt-2 pl-0">
+          <h4 class="row justify-content-left text-white">Subscribe for Updates</h4>
+        <div class="row justify-content-left">
+          <div class="col-12 col-md-5 p-0">
+            <form id="subscribeform" action="#">
+              <div class="form-row">
+                <div class="col-6 form-group">
+                  <label></label>
+                  <input type="text" class="form-control" placeholder="First name">
+                </div>
+                <div class="col-6 form-group">
+                  <label></label>
+                  <input type="text" class="form-control" placeholder="Last name">
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="email" id="email" class="form-control" placeholder="E-Mail">
+              </div>
+              <div class="pb-5">
+                <input type="submit" value="Subscribe" class="btn btn-warning w-100">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Including Bootstrap JS (with its Popper.js / jQuery dependency) so that dynamic components work -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
